@@ -145,7 +145,7 @@ public class MakeRequest extends AppCompatActivity {
                 params.put("request_receipt", receipt);
                 params.put("service", service);
                 params.put("charges", charges);
-                params.put("client", client));
+                params.put("client", client);
                 params.put("worker", worker);
                 params.put("request_date", rDate);
                 params.put("status", status);
@@ -159,4 +159,4 @@ public class MakeRequest extends AppCompatActivity {
     }
 
 }
-}
+
