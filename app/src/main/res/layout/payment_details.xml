@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:id="@+id/tvPayTitle"
+        android:text="Meal one is"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPayPrice"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:text="price"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvSh"
+        android:text="Sh"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@id/tvPayPrice"/>
+
+</RelativeLayout>

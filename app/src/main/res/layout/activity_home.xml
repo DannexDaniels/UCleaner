@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clean_filled"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivNoRequests"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Services Requested Yet"
+            android:layout_below="@id/ivNoRequests"
+            android:id="@+id/tvNoRequests"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/btRequestService"
+            android:background="@drawable/submit_btn"
+            android:text="Request Service"
+            android:textColor="@color/textColor"
+            android:layout_below="@id/tvNoRequests"
+            android:onClick="requestService"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
